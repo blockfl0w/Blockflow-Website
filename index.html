@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>blockflow</title>
+</head>
+<script src="js/main.js" defer></script>
+<script src="/js/Gradient.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+
+<body>
+    <!-- <button id="twitButton">Check out our twitter!</button> -->
+    <nav id="nav">
+        <div class="brand">
+            <div class="logo">
+                <img src="/images/white Icon.svg" alt="Blockflow Logo white" id="white">
+                <img src="/images/black Icon.svg" alt="Blocflow logo black" id="black">
+            </div>
+            <p class="brandName">Blockflow</p>
+        </div>
+        <div class="links">
+            <a id="projects">Projects</a>
+            <a id="about">About me</a>
+            <a id="resume">Resume</a>
+            <button class="achiveBttn">?</button>
+        </div>
+    </nav>
+    <div class="Hero">
+        <div class="canvasContainer">
+            <canvas id="gradient-canvas"></canvas>
+        </div>
+        <h1><span id="greeting" class="type"></span> <span class="left">im blockflow 👋</span></h1>
+        <h1>I'm a <span id="abillitys" class="type"></span></h1>
+    </div>
+    <div id="customCursor">
+        <img src="/images/twitterLogoBlack.svg" alt="twitter" id="twitWhite" class="img">
+        <img src="/images/openLink.svg" alt="openLink" class="img" id="link">
+    </div>
+    <div class="modalBackground">
+        <div id="achivementModal">
+            <button class="closeModal">x</button>
+            <h1>Achivements</h1>
+            <div class="achiveTracker">
+                <svg viewBox="0 0 36 36" class="svg">
+                    <path class="circleBg" d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831" />
+                    <path class="circle" d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831" style="stroke-dasharray: 50, 100;" />
+                </svg>
+                <p id="unlocked">0/0 (0%)</p>
+            </div>
+            <div class="achivementsGrid">
+                <div class="achivementContainer">
+                    <div>
+                        <img src="/images/star.svg" alt="Star" class="achivementCompleted"></img>
+                    </div>
+                    <h4>Multilingual</h4>
+                    <p>Lea nuestro sitio web en otro idioma </p>
+                </div>
+                <div class="achivementContainer">
+                    <div>
+                        <img src="/images/star.svg" alt="Star"></img>
+                    </div>
+                    <h4>Konami</h4>
+                    <p>The legendary code</p>
+                </div>
+                <div class="achivementContainer">
+                    <div>
+                        <img src="/images/star.svg" alt="Star"></img>
+                    </div>
+                    <h4>Confetti</h4>
+                    <p>You really love conffeti huh.</p>
+                </div>
+                <div class="achivementContainer">
+                    <div>
+                        <img src="/images/star.svg" alt="Star"></img>
+                    </div>
+                    <h4>me?</h4>
+                    <p>Is this what talking to myself feels like</p>
+                </div>
+                <div class="achivementContainer">
+                    <div>
+                        <img src="/images/star.svg" alt="Star"></img>
+                    </div>
+                    <h4>Baby steps</h4>
+                    <p>Get your first achivement</p>
+                </div>
+                <div class="achivementContainer">
+                    <div>
+                        <img src="/images/star.svg" alt="Star"></img>
+                    </div>
+                    <h4>50/50</h4>
+                    <p>complete half the achivements</p>
+                </div>
+                <div class="achivementContainer">
+                    <div>
+                        <img src="/images/star.svg" alt="Star"></img>
+                    </div>
+                    <h4>Mastery</h4>
+                    <p>Complete every achivement</p>
+                </div>
+                <div class="achivementContainer">
+                    <div>
+                        <img src="/images/star.svg" alt="Star"></img>
+                    </div>
+                    <h4>Inspector</h4>
+                    <p>You love poking around huh</p>
+                </div>
+                <div class="achivementContainer">
+                    <div>
+                        <img src="/images/star.svg" alt="Star"></img>
+                    </div>
+                    <h4>Detective</h4>
+                    <p>Check every corner. Every nook and cranny.</p>
+                </div>
+            </div>
+            <button id="confetti">Click me</button>
+        </div>
+
+    </div>
+    <script>
+        var gradient = new Gradient()
+        gradient.initGradient('#gradient-canvas');
+    </script>
+</body>
+
+</html>
